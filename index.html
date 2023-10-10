@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumlario</title>
+</head>
+<body>
+
+    <h3>Formulário com get</h3>
+    <form action="index.html" method="get">
+        <input type="text" name="q" placeholder="Digite">
+        <input type="submit" value="enviar">
+    </form>
+
+    <h3>Formulário com post</h3>
+    <form action="index.html" method="post">
+        <input type="text" name="q" placeholder="Digite">
+        <input type="submit" value="enviar">
+    </form>
+
+
+    <h1>Formulario de login com facebook</h1>
+    <form action="index.html" method="get">
+        <h2>Cadastre-se</h2>
+        <p>É rápido e fácil.</p>
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+        <br><br>
+
+        <input type="text" name="email" id="email" placeholder="Celular ou Email" required>
+
+        <br><br>
+
+        <input type="password" name="senha" id="senha" placeholder="Nova senha" required>
+
+        <br><br>
+
+        <label>Data de nascimento</label>
+        <select name="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <select name="mes">
+            <option value="janeiro">Janeiro</option>
+            <option value="fevereiro">Fevereiro</option>
+            <option value="março">Março</option>
+            <option value="abril">Abril</option>
+            <option value="maio">Maio</option>
+            <option value="junho">Junho</option>
+            <option value="julho">Julho</option>
+            <option value="agosto">Agosto</option>
+            <option value="setembro">Setembro</option>
+        </select>
+
+        <select name="ano">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+        </select>
+
+        <br><br>
+
+        <label>Gênero</label> <br>
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino">
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino">
+
+        <label for="outro">Outro</label>
+        <input type="radio" name="genero" id="outro">
+
+        <br><br>
+
+        <input type="submit" value="Cadastre-se">
+
+    </form>
+
+
+    <!-- Caso desejar colocar um input de selecionar arquivos digitar no inicio do form por exemplo:
+        <form action="index.html" method="get" enctype"multipart/form-data>
+
+            e la em baixo o botão <input type="file">
+    -->
+</body>
+</html>
